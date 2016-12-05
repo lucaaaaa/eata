@@ -1,0 +1,576 @@
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapperz {
+  position: relative;
+    height: auto;
+    top: 200px;
+    min-height: 100%;
+}
+
+
+#show-data {
+  height: 200px;
+}
+
+.second-section {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-color: orange;
+
+      bottom: 0px;
+}
+
+
+ul {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+
+  position: relative;
+
+  list-style:none;
+
+}
+
+
+
+a {
+  color: #693935;
+}
+
+#lista {
+
+}
+
+.main-menu li:hover {
+  background-color: #eae3d7;
+}
+
+
+
+
+.main-menu li ul li {
+  text-align: left;
+}
+
+.main-menu i {
+  text-align: right;
+  padding-left: 10px;
+  padding-top: 3px;
+  float: right;
+  color: rgb(205, 169, 121);
+}
+.main-menu li:hover > i {
+  color: #693935;
+}
+
+
+
+.main-menu li {
+
+  display: inline;
+  position: relative;
+  list-style: none;
+  text-align: center;
+
+
+  color: #693935;
+  padding: 8px 12px 8px 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+ul ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  display: none;
+  border: 1px solid;
+  border-color: rgb(205, 169, 121);
+
+}
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+  background: #fff;
+
+}
+
+li:hover > ul {
+  display: block;
+}
+
+
+p {
+  clear: left;
+  padding-top: 1em;
+}
+
+
+
+ol, ul {
+  list-style: none;
+  text-align: center;
+}
+
+#nav-secondary-right {
+  position: relative;
+  float: right;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+#nav-secondary-right li a span {
+  padding: 0 10px;
+  border-right: 1px solid #ccc;
+}
+
+.header-container li{
+  display: inline-block;
+
+
+
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+
+}
+
+.header {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+}
+
+
+
+.logo img{
+
+  display: inline-block;
+
+  height: 109px;
+  vertical-align: top;
+
+
+}
+
+.search {
+
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  padding: inherit;
+
+  border: 1px solid #e2d9c8;
+
+
+}
+
+.popup {
+  position: absolute;
+  top: 95px;
+  right: 0px;
+  border: 1px solid black;
+  height: 400px;
+  width: 360px;
+  z-index: 10000;
+  display: none;
+  background-color: white;
+}
+
+div.selected {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  margin: inherit;
+  height: 2000px;
+  width: 100%;
+  z-index: 10000;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.overlay-active {
+  display: block;
+}
+
+div.selected > #overlay {
+  display: block;
+}
+
+.product {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.name{
+  position: absolute;
+  left: 0px;
+  width: 66%;
+  margin: 0;
+  padding: 0;
+}
+
+.price{
+  position: absolute;
+  right: 0px;
+  width: 33%;
+  margin: 0;
+  padding: 0;
+}
+
+#pezzi {
+  border-left: 3px solid #693935;
+  float: right;
+  padding-left: 15px;
+  margin: 2px 0px 2px 0px;
+}
+
+#car {
+  float: left;
+}
+
+.cart-wrapper {
+  position: relative;
+}
+
+.carrello {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  border: 3px solid #693935;
+  font-size: 2em;
+  background-color: white;
+  z-index: 10000;
+
+
+
+}
+
+input#search {
+  width: 90%;
+  height: 50px;
+  border: none;
+}
+
+.account {
+
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+
+
+
+}
+
+#news {
+  width: 100%;
+  margin-bottom: 2px;
+  background-color: #eae3d7;
+  border: inherit;
+  color: #693935;
+  text-transform: uppercase;
+
+}
+
+#rec {
+  width: 100%;
+  background-color: #739ec9;
+  border: inherit;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-container{
+  background-color: inherit;
+}
+
+.liuk {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Dropdown Button */
+/*
+.dropbtn {
+background-color: white;
+color: #693935;
+padding: 16px;
+font-size: 12px;
+border: none;
+cursor: pointer;
+}
+
+.dropsdbtn {
+background-color: white;
+color: #693935;
+padding: 16px;
+font-size: 12px;
+border: none;
+cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/*
+.dropdown {
+position: relative;
+display: inline-block;
+font-size: 12px;
+
+}
+.dropside {
+position: relative;
+height: 45px;
+display: inline-block;
+font-size: 12px;
+
+}
+.maindrop {
+position: absolute;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/*
+.dropdown-content {
+opacity: 0;
+display: none;
+position: absolute;
+height: 200px;
+background-color: #f9f9f9;
+min-width: 190px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropside-content {
+
+
+display: none;
+position: relative;
+left: 190px;
+top: -45px;
+background-color: #f9f9f9;
+min-width: 190px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+@keyframes dropshow {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+/* Links inside the dropdown */
+/*
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropside-content a {
+
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+/*
+.dropdown-content a:hover {background-color: #f1f1f1; }
+.dropside-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+/*
+.dropdown:hover .dropdown-content {
+display: block;
+animation-name: dropshow;
+animation-duration: 1s;
+opacity: 1;
+}
+
+.dropside:hover .dropside-content {
+display: block;
+animation-name: dropshow;
+animation-duration: 1s;
+opacity: 1;
+}
+
+
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*
+.dropdown:hover .dropbtn {
+background-color: #f1f1f1;
+}
+.dropside:hover .dropsdbtn {
+background-color: #f1f1f1;
+}
+
+.dropdown-content.a:hover .dropdown-content.a {
+background-color: #f1f1f1;
+}
+*/
+.navbar {
+  border-radius: 0;
+  min-height: 30px;
+}
+
+.navbar-default {
+  border-left: none;
+  border-right: none;
+  background-color: inherit;
+  border-color: #693935
+}
+
+
+/* LIUK CSS */
+
+.page-title h1{
+  color: #6a3935;
+  font-size: 30px !important;
+}
+
+.container_filtri{
+  position: relative;
+  float: left;
+  top: 200px;
+}
+.container_dettagli_offerta{
+  background-color: #eae3d7;
+  margin-bottom: 20px;
+  padding: 15px 0px 15px 0px;
+}
+
+.vini_img{
+  height: 209px ;
+  width: 585px;
+}
+
+.text_description{
+  color: #693935;
+}
+
+.font-weight{
+  font-weight: 700;
+}
+
+.items_filtri{
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  border: 1px solid #eae3d7;
+}
+
+.items_filtri li{
+  padding: 7px 10px 7px 24px;
+  border-bottom: 1px solid #eae3d7;
+}
+.filter-products{
+  position: relative;
+}
+
+.filter-icon{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform:	translateY(-50%);
+  -moz-transform:	translateY(-50%);
+  -ms-transform:	translateY(-50%);
+  -o-transform:	translateY(-50%);
+  transform:	translateY(-50%);
+  background-color: #eae3d7;
+  width: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.vertical-hr{
+  background-color: #000000;
+  width: 1px;
+  height: 41px;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+}
+
+.select{
+  padding: 15px 15px 15px 15px;
+
+}
+
+#esempio_select{
+  height: 41px;
+  width: 50%;
+  border: 1px solid #e2d9c8;
+}
+
+.dettagli_prodotti{
+  border: 1px solid #CCAF95;
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+.img_prodotti{
+  max-width: 100%;
+  height: auto;
+}
+
+.orange{
+  color: #f49626;
+  padding: 10px 10px 10px 0px;
+
+}
+
+.old_price{
+  text-decoration: line-through;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.new_price{
+  color: red;
+  font-size: 20px;
+}
+
+.carrello_newProducts{
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 2px 2px 2px 2px;
+  border: 1px solid #693935;
+}
+
+a.carrello_newProducts:hover
+a.carrello_newProducts:focus{
+  background-color: #f49626;
+}

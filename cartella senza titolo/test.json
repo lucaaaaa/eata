@@ -1,0 +1,67 @@
+{
+  "prodotti": [
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "02",
+      "prezzo_norm": "22",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    },
+    {
+      "id": "01",
+      "prezzo_norm": "20",
+      "prezzo_socnto": "15",
+      "descrizione": "Descrizione prodotto",
+      "tipo": "Tipo"
+    }
+  ]
+}

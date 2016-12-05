@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Request JSON Test</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/mycss.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="header-container navbar-fixed-top">
+    <div class="overlay">
+    </div>
+    <ol id="nav-secondary-right">
+      <li > <a href=""> <span> bella </span> </a> </li>
+      <li > <a href=""> <span> bella2 </span> </a> </li>
+      <li > <a href=""> <span> bella3 </span> </a> </li>
+      <li > <a href=""> <span> bella4 </span> </a> </li>
+      <li > <a href=""> <span> bella5 </span> </a> </li>
+      <li > <a href=""> <span> bella6 </span> </a> </li>
+      <li > <a href=""> <span> bella7 </span> </a> </li>
+      <li > <a href=""> <span> bella8 </span> </a> </li>
+      <li > <a href=""> <span> bella9 </span> </a> </li>
+    </ol>
+    <br>
+    <div class="header text-center">
+      <div class="logo col-md-3"> <img src="src/logo.jpg" alt="" /></div>
+      <div class="search col-md-3">
+        <input type="search" id="search" name="search" placeholder="Search..">
+        <i class="fa fa-search fa-lg"></i>
+      </div>
+      <div class="account col-md-3">
+        <button class="button" id="news">
+          Newsletter
+        </button>
+        <button class="button" id="rec">
+          Registrati/Login
+        </button>
+      </div>
+      <div class="cart-wrapper">
+        <div class="carrello col-md-3">
+          <span id="car"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+          <span>€ 0.00 </span>
+          <span id="pezzi">2</span>
+        </div>
+        <div class="popup">
+          <div class="product">
+            <div class="name">
+            </div>
+            <div class="price">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-menu">
+      <nav class="navbar navbar-default">
+        <div id="lista">
+          <ul>
+            <li>
+              <a href="">MANGIARE</a>
+              <ul>
+                <li>
+                  <a href="">Pasta, Riso, Cereali e Legumi</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Pasta</a></li>
+                    <li><a href="">Riso</a></li>
+                    <li><a href="">Cereali</a></li>
+                    <li><a href="">Farine</a></li>
+                    <li><a href="">Legumi</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Sfizi salati</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Gallette</a></li>
+                    <li><a href="">Chips</a></li>
+                    <li><a href="">Prodotti da forno</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Condimenti</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Olio</a></li>
+                    <li><a href="">Aceto</a></li>
+                    <li><a href="">Sale e spezie</a></li>
+                    <li><a href="">Salse</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Conserve</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Olive e Capperi</a></li>
+                    <li><a href="">Sott'oli e Sott'aceti</a></li>
+                    <li><a href="">Creme e Patè</a></li>
+                    <li><a href="">Pesce</a></li>
+                    <li><a href="">Funghi e Tartufi</a></li>
+                    <li><a href="">Pomodori</a></li>
+                    <li><a href="">Suhi regionali per Eataly</a></li>
+                    <li><a href="">Sughi e Pesti</a></li>
+                    <li><a href="">Pronti da Mangiare</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Dolci</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Biscotti</a></li>
+                    <li><a href="">Torte</a></li>
+                    <li><a href="">Brioche</a></li>
+                    <li><a href="">Cioccolato e Praline</a></li>
+                    <li><a href="">Marmellate e Confetture</a></li>
+                    <li><a href="">Creme Spalmabili</a></li>
+                    <li><a href="">Caramelle</a></li>
+                    <li><a href="">Miele e Zucchero</a></li>
+                    <li><a href="">Miscele e Preparati</a></li>
+                    <li><a href="">Muesli e Cereali</a></li>
+                    <li><a href="">Frutta secca e sciroppata</a></li>
+                    <li><a href="">Dolci per le feste</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Per i più piccoli</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Omogeneizzati</a></li>
+                    <li><a href="">Composte di frutta</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">BERE</a>
+              <ul>
+                <li>
+                  <a href="">Vini</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Vino Libero</a></li>
+                    <li><a href="">Vivaio Eataly</a></li>
+                    <li><a href="">Volcanic Wine</a></li>
+                    <li><a href="">Rossi</a></li>
+                    <li><a href="">Bianchi</a></li>
+                    <li><a href="">Rosati</a></li>
+                    <li><a href="">Prosecchi e Spumanti</a></li>
+                    <li><a href="">Champagne</a></li>
+                    <li><a href="">Vini dolci e Passiti</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Birre e Sidro</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Birre Chiare</a></li>
+                    <li><a href="">Birre Ambrate</a></li>
+                    <li><a href="">Birre Scure</a></li>
+                    <li><a href="">Sidro</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Distillati e Liquori</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Distillati</a></li>
+                    <li><a href="">Liquori</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Bevande analcoliche</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Succhi di frutta</a></li>
+                    <li><a href="">Sciroppi</a></li>
+                    <li><a href="">Bibite</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Caffè ed Infusi</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Caffè</a></li>
+                    <li><a href="">Tè</a></li>
+                    <li><a href="">Tisane</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">DISPENSA</a>
+            </li>
+            <li>
+              <a href="">IDEE REGALO</a>
+              <ul>
+                <li><a href="">Il natale di Eataly</a></li>
+                <li><a href="">Cofanetti Regalo</a></li>
+                <li><a href="">Eatinerari</a></li>
+                <li><a href="">Eataly Card</a></li>
+                <li>
+                  <a href="">Degustazioni</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Degustazioni di Vino e Birra</a></li>
+                    <li><a href="">Borse Ricetta</a></li>
+                    <li><a href="">Degustazioni dei Produttori</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">PER TE E LA TUA CASA</a>
+              <ul>
+                <li>
+                  <a href="">Corpo</a>
+                  <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  <ul>
+                    <li><a href="">Saponi e Detergenti</a></li>
+                    <li><a href="">Deodoranti</a></li>
+                    <li><a href="">Cosmetici</a></li>
+                    <li><a href="">Benessere</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Cucina</a></li>
+                <li><a href="">Casa</a></li>
+                <li><a href="">Libreria</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">COLLEZIONI</a>
+            </li>
+            <li>
+              <a href="">CORSI</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="wrapperz">
+    <div class="liuk">
+      <div class="page-title">
+        <h1>10 Vini a Meno di 10€</h1>
+      </div>
+      <div class= "col-xs-12 container_dettagli_offerta">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img src="src/10-vini.jpg" class="vini_img" alt="" />
+        </div>
+        <div class="text_description col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="col-xs-2 container_filtri">
+          <div class="col-xs-12 filtri text_description font-weight">
+            Filtra per
+          </div>
+          <ul class="col-xs-12 items_filtri text_description">
+            <li><div class="filter-products">
+              <div class="filter-label">cazzo</div><i class="fa fa-plus filter-icon"></i></div></li>
+              <li><div class="filter-products">
+                <div class="filter-label">cazzo</div><i class="fa fa-plus filter-icon"></i></div></li>
+                <li><div class="filter-products">
+                  <div class="filter-label">cazzo</div><i class="fa fa-plus filter-icon"></i></div></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 select text_description">
+                <div class="col-xs-4">
+                </div>
+                <div class="col-xs-3">
+                  Ordina per:
+                  <label for="sort_by"></label>
+                  <select id="esempio_select">
+                    <option value="1">orla culo</option>
+                    <option value="2">orla puzza</option>
+                    <option value="3">fatine</option>
+                    <option value="4">svegliati</option>
+                    <option value="5">sballato</option>
+                  </select>
+                </div>
+                <div class="col-xs-2 vertical-hr">
+                </div>
+                <div class="col-xs-3">
+                  Mostra
+                  <label for="sort_show"></label>
+                  <select id="esempio_select">
+                    <option value="1">orla culo</option>
+                    <option value="2">orla puzza</option>
+                    <option value="3">fatine</option>
+                    <option value="4">svegliati</option>
+                    <option value="5">sballato</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="col-xs-2">
+              </div>
+              <div class="col-xs-10">
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="1">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€73.71</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="2">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Bobo Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€23.70</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="3">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€73.71</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="4">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€73.71</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="5">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€73.71</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="6">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€73.71</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="7">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€73.71</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="8">
+                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                  <div class="orange">Eataly</div>
+                  <span class="text_description old_price">€81.90</span>
+                  <span class="new_price">€73.71</span>
+                  <div class=" carrello_newProducts col-xs-12 text-center">
+                    <span "text_description">aggiungi</span>
+                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carroz">
+            </div>
+          </div>
+          <div class="second-section">
+            <a href="#" id="get-data">Get JSON data</a>
+            <div id="show-data"></div>
+          </div>
+        </div>
+        <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   !-->
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="example.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
