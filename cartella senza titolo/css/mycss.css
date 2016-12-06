@@ -1,14 +1,15 @@
 
 html {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .wrapperz {
   position: relative;
-    height: auto;
-    top: 200px;
-    min-height: 100%;
+  top: 200px;
+
+  height: auto;
+  min-height: 100%;
 }
 
 
@@ -17,23 +18,25 @@ html {
 }
 
 .second-section {
-      position: relative;
-      width: 100%;
-      height: 200px;
-      background-color: orange;
+  position: relative;
+  bottom: 0px;
 
-      bottom: 0px;
+  width: 100%;
+  height: 200px;
+
+  background-color: orange;
 }
 
 
 ul {
-  padding: 0;
-  margin: 0;
-  background: #fff;
-
   position: relative;
 
+  margin: 0;
+  padding: 0;
+
   list-style:none;
+
+  background: #fff;
 
 }
 
@@ -59,10 +62,13 @@ a {
 }
 
 .main-menu i {
-  text-align: right;
-  padding-left: 10px;
-  padding-top: 3px;
   float: right;
+
+  padding-top: 3px;
+  padding-left: 10px;
+
+  text-align: right;
+
   color: rgb(205, 169, 121);
 }
 .main-menu li:hover > i {
@@ -72,35 +78,41 @@ a {
 
 
 .main-menu li {
+  position: relative;
 
   display: inline;
-  position: relative;
+
+  min-width: 150px;
+  padding: 8px 12px 8px 12px;
+
   list-style: none;
+
+  cursor: pointer;
   text-align: center;
 
-
   color: #693935;
-  padding: 8px 12px 8px 12px;
-  font-size: 12px;
   border: none;
-  cursor: pointer;
-  min-width: 150px;
+
+  font-size: 12px;
 }
 
 ul ul {
   position: absolute;
-  left: 0;
   top: 100%;
-  background: #fff;
+  left: 0;
+
   display: none;
+
   border: 1px solid;
   border-color: rgb(205, 169, 121);
+  background: #fff;
 
 }
 
 ul ul ul {
-  left: 100%;
   top: 0;
+  left: 100%;
+
   background: #fff;
 
 }
@@ -112,6 +124,7 @@ li:hover > ul {
 
 p {
   clear: left;
+
   padding-top: 1em;
 }
 
@@ -119,18 +132,23 @@ p {
 
 ol, ul {
   list-style: none;
+
   text-align: center;
 }
 
 #nav-secondary-right {
   position: relative;
+
   float: right;
-  font-size: 14px;
+
   letter-spacing: normal;
+
+  font-size: 14px;
 }
 
 #nav-secondary-right li a span {
   padding: 0 10px;
+
   border-right: 1px solid #ccc;
 }
 
@@ -142,16 +160,17 @@ ol, ul {
 }
 
 body {
-  height: 100%;
-  width: 100%;
-  padding: 0 20px;
   position: absolute;
 
+  width: 100%;
+  height: 100%;
 }
 
 .header {
   position: relative;
+
   display: inline-block;
+
   width: 100%;
 
 }
@@ -159,21 +178,22 @@ body {
 
 
 .logo img{
-
   display: inline-block;
 
   height: 109px;
+
   vertical-align: top;
 
 
 }
 
 .search {
-
   display: inline-block;
-  vertical-align: top;
+
   margin-top: 40px;
   padding: inherit;
+
+  vertical-align: top;
 
   border: 1px solid #e2d9c8;
 
@@ -182,13 +202,16 @@ body {
 
 .popup {
   position: absolute;
+  z-index: 10000;
   top: 95px;
   right: 0px;
-  border: 1px solid black;
-  height: 400px;
-  width: 360px;
-  z-index: 10000;
+
   display: none;
+
+  width: 360px;
+  height: 400px;
+
+  border: 1px solid black;
   background-color: white;
 }
 
@@ -197,15 +220,18 @@ div.selected {
 }
 
 .overlay {
-  display: none;
   position: absolute;
-  top: 0;
-  margin: inherit;
-  height: 2000px;
-  width: 100%;
   z-index: 10000;
-  background-color: black;
+  top: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 2000px;
+  margin: inherit;
+
   opacity: 0.5;
+  background-color: black;
 }
 
 .overlay-active {
@@ -218,8 +244,9 @@ div.selected > #overlay {
 
 .product {
   position: relative;
-  height: 100%;
+
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -227,6 +254,7 @@ div.selected > #overlay {
 .name{
   position: absolute;
   left: 0px;
+
   width: 66%;
   margin: 0;
   padding: 0;
@@ -235,16 +263,19 @@ div.selected > #overlay {
 .price{
   position: absolute;
   right: 0px;
+
   width: 33%;
   margin: 0;
   padding: 0;
 }
 
 #pezzi {
-  border-left: 3px solid #693935;
   float: right;
-  padding-left: 15px;
+
   margin: 2px 0px 2px 0px;
+  padding-left: 15px;
+
+  border-left: 3px solid #693935;
 }
 
 #car {
@@ -257,13 +288,18 @@ div.selected > #overlay {
 
 .carrello {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 40px;
-  border: 3px solid #693935;
-  font-size: 2em;
-  background-color: white;
   z-index: 10000;
+
+  display: inline-block;
+
+  margin-top: 40px;
+
+  vertical-align: top;
+
+  border: 3px solid #693935;
+  background-color: white;
+
+  font-size: 2em;
 
 
 
@@ -272,14 +308,16 @@ div.selected > #overlay {
 input#search {
   width: 90%;
   height: 50px;
+
   border: none;
 }
 
 .account {
-
   display: inline-block;
-  vertical-align: top;
+
   margin-top: 40px;
+
+  vertical-align: top;
 
 
 
@@ -288,19 +326,23 @@ input#search {
 #news {
   width: 100%;
   margin-bottom: 2px;
-  background-color: #eae3d7;
-  border: inherit;
-  color: #693935;
+
   text-transform: uppercase;
+
+  color: #693935;
+  border: inherit;
+  background-color: #eae3d7;
 
 }
 
 #rec {
   width: 100%;
-  background-color: #739ec9;
-  border: inherit;
-  color: #fff;
+
   text-transform: uppercase;
+
+  color: #fff;
+  border: inherit;
+  background-color: #739ec9;
 }
 
 .header-container{
@@ -309,8 +351,10 @@ input#search {
 
 .liuk {
   position: relative;
+
   overflow: hidden;
 }
+
 
 
 /* Dropdown Button */
@@ -440,15 +484,16 @@ background-color: #f1f1f1;
 }
 */
 .navbar {
-  border-radius: 0;
   min-height: 30px;
+
+  border-radius: 0;
 }
 
 .navbar-default {
-  border-left: none;
-  border-right: none;
-  background-color: inherit;
   border-color: #693935
+  border-right: none;
+  border-left: none;
+  background-color: inherit;
 }
 
 
@@ -456,44 +501,82 @@ background-color: #f1f1f1;
 
 .page-title h1{
   color: #6a3935;
+
   font-size: 30px !important;
+}
+
+.container{
+  width: 100%;
+  padding: 0 20px;
 }
 
 .container_filtri{
   position: relative;
-  float: left;
   top: 200px;
+
+  float: left;
 }
 .container_dettagli_offerta{
-  background-color: #eae3d7;
   margin-bottom: 20px;
   padding: 15px 0px 15px 0px;
+
+  background-color: #eae3d7;
+}
+
+.text_verticalPaddingbottom{
+  padding-bottom: 3px;
+}
+
+.paddingWrite{
+  padding-bottom: 15px;
+}
+
+.text_verticalPaddingtop{
+  padding-top: 15px;
 }
 
 .vini_img{
-  height: 209px ;
   width: 585px;
+  height: 209px ;
 }
 
 .text_description{
   color: #693935;
 }
 
+.text_description2{
+  color: #927573;
+
+  font-size: 12px;
+}
+
+.ssl{
+  font-size: 7px;
+  padding-top: 20px;
+  color: black;
+}
+
+
 .font-weight{
   font-weight: 700;
 }
 
 .items_filtri{
-  font-size: 18px;
-  line-height: 1.4;
-  text-transform: uppercase;
   position: relative;
+
   display: block;
+
+  text-transform: uppercase;
+
   border: 1px solid #eae3d7;
+
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .items_filtri li{
   padding: 7px 10px 7px 24px;
+
   border-bottom: 1px solid #eae3d7;
 }
 .filter-products{
@@ -502,26 +585,44 @@ background-color: #f1f1f1;
 
 .filter-icon{
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
+
+  width: 25px;
+
   -webkit-transform:	translateY(-50%);
   -moz-transform:	translateY(-50%);
   -ms-transform:	translateY(-50%);
   -o-transform:	translateY(-50%);
   transform:	translateY(-50%);
-  background-color: #eae3d7;
-  width: 25px;
   text-align: center;
   vertical-align: middle;
+
+  background-color: #eae3d7;
 }
 
 .vertical-hr{
-  background-color: #000000;
+  display: inline-block;
+
   width: 1px;
   height: 41px;
-  display: inline-block;
-  text-align: center;
   padding: 0px 0px 0px 0px;
+
+  text-align: center;
+
+  background-color: #000000;
+}
+
+.vertical-hr2{
+  display: inline-block;
+
+  width: 3px;
+  height: 90px;
+  padding: 0px 0px 0px 0px;
+
+  text-align: center;
+
+  background-color: #fff;
 }
 
 .select{
@@ -530,15 +631,17 @@ background-color: #f1f1f1;
 }
 
 #esempio_select{
-  height: 41px;
   width: 50%;
+  height: 41px;
+
   border: 1px solid #e2d9c8;
 }
 
 .dettagli_prodotti{
-  border: 1px solid #CCAF95;
-  padding: 10px;
   margin: 10px 10px 10px 10px;
+  padding: 10px;
+
+  border: 1px solid #CCAF95;
 }
 
 .img_prodotti{
@@ -546,31 +649,75 @@ background-color: #f1f1f1;
   height: auto;
 }
 
+.prodotti{
+  padding-left: 100px;
+}
+
 .orange{
-  color: #f49626;
   padding: 10px 10px 10px 0px;
+
+  color: #f49626;
 
 }
 
 .old_price{
-  text-decoration: line-through;
-  font-size: 20px;
   padding-right: 10px;
+
+  text-decoration: line-through;
+
+  font-size: 20px;
 }
 
 .new_price{
   color: red;
+
   font-size: 20px;
 }
 
 .carrello_newProducts{
-  text-transform: uppercase;
-  font-size: 18px;
   padding: 2px 2px 2px 2px;
+
+  text-transform: uppercase;
+
   border: 1px solid #693935;
+
+  font-size: 18px;
 }
 
 a.carrello_newProducts:hover
 a.carrello_newProducts:focus{
   background-color: #f49626;
+}
+
+.red {
+  color: red;
+}
+
+.footer{
+  position: relative;
+  top: 230px;
+
+  padding: 0px 0px 0px 0px;
+}
+
+.footer1{
+  padding: 10px 10px 10px 10px;
+
+  background-color: #f4efe8;
+}
+
+.footer_icons{
+  padding: 10px 10px 10px 10px;
+}
+
+.footer2{
+  margin-top: 10px;
+  padding: 50px 10px 10px 10px;
+
+  background-color: #f4efe8;
+}
+
+.aboutline {
+  margin: 0 0 0 0;
+  border: 1px dotted #693935;
 }
