@@ -8,6 +8,8 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
+
+
   <div class="header-container navbar-fixed-top">
     <div class="overlay">
     </div>
@@ -23,7 +25,7 @@
       <li > <a href=""> <span> bella9 </span> </a> </li>
     </ol>
     <br>
-    <div class="header text-center">
+    <div class="header text-center container">
       <div class="logo col-md-3"> <img src="src/logo.jpg" alt="" /></div>
       <div class="search col-md-3">
         <input type="search" id="search" name="search" placeholder="Search..">
@@ -54,7 +56,7 @@
       </div>
     </div>
     <div class="main-menu">
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default text_description">
         <div id="lista">
           <ul>
             <li>
@@ -239,168 +241,295 @@
       </nav>
     </div>
   </div>
-  <div class="wrapperz">
-    <div class="liuk">
-      <div class="page-title">
-        <h1>10 Vini a Meno di 10€</h1>
-      </div>
-      <div class= "col-xs-12 container_dettagli_offerta">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <img src="src/10-vini.jpg" class="vini_img" alt="" />
+
+  <div class="container">
+
+    <div class="wrapperz">
+      <div class="liuk">
+        <div class="page-title">
+          <h1>10 Vini a Meno di 10€</h1>
         </div>
-        <div class="text_description col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <div class="col-xs-2 container_filtri">
-          <div class="col-xs-12 filtri text_description font-weight">
-            Filtra per
+        <div class= "col-xs-12 container_dettagli_offerta">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="src/10-vini.jpg" class="vini_img" alt="" />
           </div>
-          <ul class="col-xs-12 items_filtri text_description">
-            <li><div class="filter-products">
-              <div class="filter-label">cazzo</div><i class="fa fa-plus filter-icon"></i></div></li>
+          <div class="text_description col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="text_verticalPaddingbottm"><strong>Bere bene senza spendere delle cifre esorbitanti</strong> è possibile</div>
+            <p class="text_verticalPaddingbottom">I fattori che influiscono sul prezzo di una bottiglia di vino sono molteplici e non è detto che un vino che costi al di sotto di 10 euro sia un vino poco appetibile.</p>
+            <p class="text_verticalPaddingbottom">In base all’occasione di consumo, ognuna di queste bottiglie rappresenta una <strong>scelta intelligente e degna di nota.</strong></p>
+            <p class="text_verticalPaddingbottom">Abbiamo selezionato una serie di vini piacevolissimi da gustare in diversi momenti della giornata, e adatti a tutte le tasche. Approfittane per fare scorta dei tuoi vini preferiti a un prezzo strepitoso!</p>
+          </div>
+        </div>
+        <div class="col-xs-12">
+
+          <div class="col-xs-2 container_filtri">
+            <div class="col-xs-12 filtri text_description font-weight">
+              Filtra per
+            </div>
+            <ul class="col-xs-12 items_filtri text_description">
               <li><div class="filter-products">
-                <div class="filter-label">cazzo</div><i class="fa fa-plus filter-icon"></i></div></li>
+                <div class="filter-label text-left">prezzo</div><i class="fa fa-plus filter-icon"></i></div></li>
                 <li><div class="filter-products">
-                  <div class="filter-label">cazzo</div><i class="fa fa-plus filter-icon"></i></div></li>
-                </ul>
+                  <div class="filter-label text-left">regione</div><i class="fa fa-plus filter-icon"></i></div></li>
+                  <li><div class="filter-products">
+                    <div class="filter-label text-left">produttore</div><i class="fa fa-plus filter-icon"></i></div></li>
+                  </ul>
+                </div>
+
+                <div class="col-xs-12 select text_description">
+                  <div class="col-xs-4">
+                  </div>
+                  <div class="col-xs-3">
+                    Ordina per:
+                    <label for="sort_by"></label>
+                    <select id="esempio_select">
+                      <option value="1">Nome - A to Z</option>
+                      <option value="2">Nome - Z to A</option>
+                      <option value="3">Prezzo - crescente</option>
+                      <option value="4">Prezzo - decrescente</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-2 vertical-hr">
+                  </div>
+                  <div class="col-xs-3">
+                    Mostra
+                    <label for="sort_show"></label>
+                    <select id="esempio_select">
+                      <option value="1">15 prodotto/i</option>
+                      <option value="2">30 prodotto/i</option>
+                      <option value="3">50 prodotto/i</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-              <div class="col-xs-12 select text_description">
-                <div class="col-xs-4">
+              <div class="col-xs-12">
+                <div class="col-xs-2">
                 </div>
-                <div class="col-xs-3">
-                  Ordina per:
-                  <label for="sort_by"></label>
-                  <select id="esempio_select">
-                    <option value="1">orla culo</option>
-                    <option value="2">orla puzza</option>
-                    <option value="3">fatine</option>
-                    <option value="4">svegliati</option>
-                    <option value="5">sballato</option>
-                  </select>
+                <div class="col-xs-10">
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="1">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€73.71</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="2">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Bobo Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€23.70</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="3">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€73.71</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="4">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€73.71</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="5">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€73.71</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="6">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€73.71</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="7">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€73.71</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="8">
+                    <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
+                    <div class="text_description">Selezione Dieci Vini di Qualità</div>
+                    <div class="orange">Eataly</div>
+                    <span class="text_description old_price">€81.90</span>
+                    <span class="new_price">€73.71</span>
+                    <div class=" carrello_newProducts col-xs-12 text-center">
+                      <span "text_description">aggiungi</span>
+                      <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-xs-2 vertical-hr">
-                </div>
-                <div class="col-xs-3">
-                  Mostra
-                  <label for="sort_show"></label>
-                  <select id="esempio_select">
-                    <option value="1">orla culo</option>
-                    <option value="2">orla puzza</option>
-                    <option value="3">fatine</option>
-                    <option value="4">svegliati</option>
-                    <option value="5">sballato</option>
-                  </select>
-                </div>
+              </div>
+              <div class="carroz">
               </div>
             </div>
-            <div class="col-xs-12">
-              <div class="col-xs-2">
-              </div>
-              <div class="col-xs-10">
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="1">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€73.71</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="2">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Bobo Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€23.70</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti" id="3">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€73.71</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="4">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€73.71</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="5">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€73.71</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="6">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€73.71</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="7">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€73.71</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-                <div class="col-sm-3 col-xs-12 dettagli_prodotti"id="8">
-                  <img src="src/prodotto_1.jpg" class="img_prodotti" alt="" />
-                  <div class="text_description">Selezione Dieci Vini di Qualità</div>
-                  <div class="orange">Eataly</div>
-                  <span class="text_description old_price">€81.90</span>
-                  <span class="new_price">€73.71</span>
-                  <div class=" carrello_newProducts col-xs-12 text-center">
-                    <span "text_description">aggiungi</span>
-                    <span class="text_description"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carroz">
-            </div>
-          </div>
-          <div class="second-section">
+            <!--        <div class="second-section">
             <a href="#" id="get-data">Get JSON data</a>
             <div id="show-data"></div>
-          </div>
+          </div>  -->
         </div>
+
+      </div> <!--close container (con padding)-->
+
+      <div class="footer col-xs-12">
+        <div class="footer1 col-xs-12">
+          <div class="col-xs-3 text-uppercase text_description">
+            lavora con noi
+            <div class="text_verticalPaddingtop text_description text_description2">diventa parte <br>del mondo eataly</div>
+          </div>
+          <div class="col-xs-1 text-uppercase text_description vertical-hr2">
+          </div>
+          <div class="col-xs-4 text-uppercase text_description">
+            seguici su
+            <br>
+            <br>
+            <div class="col-xs-1 footer_icons">
+              <a href="https://www.facebook.com/eataly" target="_blank"><i class="fa fa-2x fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-xs-1 footer_icons">
+              <a href="https://www.facebook.com/eataly" target="_blank"><i class="fa fa-2x fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-xs-1 footer_icons">
+              <a href="https://www.facebook.com/eataly" target="_blank"><i class="fa fa-2x fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-xs-1 footer_icons">
+              <a href="https://www.facebook.com/eataly" target="_blank"><i class="fa fa-2x fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="col-xs-4 text-right text-uppercase text_description">
+            <img src="src/italian-food.png" alt="" />
+            <br>
+            mangi meglio, vivi meglio... <span class="red">anche online<span>
+            </div>
+          </div>
+
+
+          <div class="footer2 col-xs-12">
+            <div class="col-xs-3 text_description2 paddingWrite">
+              <a href="#" class="text-uppercase paddingWrite">spesa online</a>
+              <br><br>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Mangiare</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Bere</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">La Dispensa di Eataly</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Idee Regalo</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Per te e la tua casa</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Eatinerari</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Per le aziende</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Eataly Today | NOVITA'</a></div>
+            </div>
+
+            <div class="col-xs-2 text_description2">
+              <a href="#" class="text-uppercase paddingWrite">negozi</a>
+              <br><br>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Torino Lingotto</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Milano Smeraldo</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Roma</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Firenze</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Genova</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Bari</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Tutti gli eventi</a></div>
+            </div>
+
+            <div class="col-xs-2 text_description2">
+              <a href="#" class="text-uppercase paddingWrite">eventi</a>
+              <br><br>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Torino Lingotto</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Milano Smeraldo</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Roma</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Firenze</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Genova</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Bari</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Tutti gli eventi</a></div>
+            </div>
+
+            <div class="col-xs-3 text_description2">
+              <a href="#" class="text-uppercase paddingWrite">chi siamo</a>
+              <br><br>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Eataly è</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Manifesto</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Lavora con Noi</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Diventa fornitore</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">I Partner di Eataly</a></div>
+            </div>
+
+            <div class="col-xs-2 text_description2">
+              <a href="#" class="text-uppercase paddingWrite">informazioni</a>
+              <br><br>
+              <div class="text_description2 text-left paddingWrite"><a href="#">FAQ - Domande frequenti</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Spedizione e consegna</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Contatti</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Condizioni d'acquisto</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Politica di privacy</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Note legali</a></div>
+              <div class="text_description2 text-left paddingWrite"><a href="#">Impostazioni dei cookie</a></div>
+            </div>
+          </div>
+
+          <div class="container about text_description2">
+            <div>
+              Eataly Net S.r.l. | P. Iva 03453380044 | Powered by Eataly Net - Copyright © 2012 - 2016 Eataly Net S.r.l. - All Rights Reserved | FACT®Finder
+            </div>
+            <div class="col-xs-12">
+              <div class="text_verticalPaddingtop text_description text-uppercase col-xs-6">
+                metodo di pagamento
+                <hr class="dotted text_description aboutline">
+                <img src="src/carte.jpg" class="col-xs-12" alt="">
+              </div>
+              <div class="text_verticalPaddingtop text_description text-uppercase col-xs-6">
+                sicurezza certificata
+                <hr class="dotted text_description aboutline">
+                <a href="#" about="_blank" class="col-xs-3 ssl font-weight">Informazioni sul certificato SSL</a>
+                <img src="src/bnl.png" class="col-xs-3" alt="">
+                <img src="src/netcomm-certificazione.jpg" class="col-xs-3" alt="">
+                <img src="src/netcomm-2016.jpg" class="col-xs-3" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
         <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   !-->
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="example.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/script.js"></script>
-</body>
-</html>
+      </body>
+      </html>
